@@ -1,0 +1,95 @@
+<div class="sgd-cq">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+.sgd-cq { container-type: inline-size; width: 100%; max-width: 100%; }
+.sgd-footer-bottom {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #0E1A2B;
+  border-top: 1px solid rgba(217, 220, 211, 0.18);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #C9CED6;
+  padding: 28px 24px;
+}
+.sgd-footer-bottom-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+}
+.sgd-footer-bottom-copy {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+.sgd-footer-bottom-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sgd-footer-bottom-link {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #C9CED6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.sgd-footer-bottom-link:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.sgd-footer-bottom-link:focus-visible {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 3px;
+}
+@container (max-width: 768px) {
+  .sgd-footer-bottom {
+    padding: 20px 24px 28px;
+  }
+  .sgd-footer-bottom-inner {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .sgd-footer-bottom-nav {
+    gap: 0 24px;
+  }
+  .sgd-footer-bottom-link {
+    display: inline-block;
+    padding: 9px 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sgd-footer-bottom-link { transition: none; }
+}
+@container (max-width: 600px) {
+  .sgd-footer-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* Any touch screen (phones and tablets, including iPads in landscape) */
+@media (pointer: coarse) {
+  .sgd-footer-bottom-nav { gap: 0 24px; }
+  .sgd-footer-bottom-link { display: inline-block; padding: 9px 0; }
+}
+</style>
+<div class="sgd-footer-bottom">
+  <div class="sgd-footer-bottom-inner">
+    <p class="sgd-footer-bottom-copy">&copy; 2026 Social Geeks Digital</p>
+    <ul class="sgd-footer-bottom-nav" aria-label="Footer">
+      <li><a href="https://socialgeeks.com.au/privacy-policy/" class="sgd-footer-bottom-link">Privacy policy</a></li>
+      <li><a href="https://socialgeeks.com.au/terms-of-service/" class="sgd-footer-bottom-link">Terms of service</a></li>
+      <li><a href="https://socialgeeks.com.au/portfolio-case-studies/" class="sgd-footer-bottom-link">Case studies</a></li>
+      <li><a href="https://socialgeeks.com.au/brand-ambassador-area/" class="sgd-footer-bottom-link">Brand ambassador area</a></li>
+      <li><a href="https://app.socialgeeks.io" class="sgd-footer-bottom-link" target="_blank" rel="noopener">Client login</a></li>
+    </ul>
+  </div>
+</div>
+</div>

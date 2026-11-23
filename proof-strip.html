@@ -1,0 +1,67 @@
+<div class="sgd-cq">
+<div class="sgd-proof">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=JetBrains+Mono:wght@400&display=swap');
+.sgd-cq { container-type: inline-size; width: 100%; max-width: 100%; }
+    
+.sgd-proof {
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #0E1A2B;
+      border-top: 1px solid rgba(217, 220, 211, 0.14);
+      padding: 22px 24px;
+    }
+    .sgd-proof-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 16px 56px;
+      list-style: none;
+      padding: 0;
+    }
+    .sgd-proof-item {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 10px;
+      margin: 0;
+    }
+    .sgd-proof-number {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 1;
+      color: #FFFFFF;
+    }
+    .sgd-proof-label {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.3;
+      color: #C9CED6;
+    }
+    @container (max-width: 600px) {
+      .sgd-proof-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+      .sgd-proof-number { font-size: 20px; }
+      .sgd-proof-label { font-size: 14px; }
+    }
+  </style>
+  <ul class="sgd-proof-inner">
+    <!-- Only keep a line if you can back the number up. Delete the whole <li> if not. -->
+    <li class="sgd-proof-item">
+      <span class="sgd-proof-number">300+</span>
+      <span class="sgd-proof-label">Australian businesses worked with</span>
+    </li>
+    <li class="sgd-proof-item">
+      <span class="sgd-proof-number">$20M+</span>
+      <span class="sgd-proof-label">in ad spend managed</span>
+    </li>
+  </ul>
+</div>
+</div>

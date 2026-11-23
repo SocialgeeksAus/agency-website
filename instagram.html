@@ -1,0 +1,98 @@
+<div class="sgd-cq">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400&display=swap');
+.sgd-cq { container-type: inline-size; width: 100%; max-width: 100%; }
+
+.sgd-insta {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #F5F6F1;
+  color: #0E1A2B;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 80px 24px;
+}
+.sgd-insta *,
+.sgd-insta *::before,
+.sgd-insta *::after {
+  box-sizing: border-box;
+}
+.sgd-insta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid #D9DCD3;
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px 48px;
+}
+.sgd-insta-title {
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: clamp(28px, 3.4cqi, 36px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #0E1A2B;
+  margin: 0 0 10px;
+}
+.sgd-insta-text {
+  font-size: 17px;
+  line-height: 1.55;
+  color: #5B6676;
+  margin: 0;
+  max-width: 50ch;
+}
+.sgd-insta-handle {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  color: #0E1A2B;
+}
+.sgd-insta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0E1A2B;
+  background: transparent;
+  border: 1.5px solid #0E1A2B;
+  padding: 13px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.sgd-insta-btn:hover {
+  background-color: #0E1A2B;
+  color: #FFFFFF;
+}
+.sgd-insta-btn:focus-visible {
+  outline: 2px solid #0E1A2B;
+  outline-offset: 4px;
+}
+.sgd-insta-btn svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+@container (max-width: 600px) {
+  .sgd-insta {
+    padding: 56px 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sgd-insta-btn { transition: none; }
+}
+</style>
+<section class="sgd-insta" aria-labelledby="sgd-insta-title">
+  <div class="sgd-insta-inner">
+    <div>
+      <h2 class="sgd-insta-title" id="sgd-insta-title">Follow along on Instagram</h2>
+      <p class="sgd-insta-text">Ad tips, behind-the-scenes and the odd bit of geek humour at <span class="sgd-insta-handle">@socialgeeks.io</span></p>
+    </div>
+    <a class="sgd-insta-btn" href="https://www.instagram.com/socialgeeks.io/" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+      Follow us
+    </a>
+  </div>
+</section>
+</div>

@@ -1,0 +1,322 @@
+<div class="sgd-cq">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400&display=swap');
+.sgd-cq { container-type: inline-size; width: 100%; max-width: 100%; }
+
+.sgd-cases {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  color: #0E1A2B;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 104px 24px;
+  -webkit-text-size-adjust: 100%;
+}
+.sgd-cases *,
+.sgd-cases *::before,
+.sgd-cases *::after {
+  box-sizing: border-box;
+}
+.sgd-cases-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.sgd-cases-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 20px 32px;
+  margin-bottom: 40px;
+}
+.sgd-cases-title {
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: clamp(34px, 4.2cqi, 44px);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: #0E1A2B;
+  margin: 0 0 12px;
+}
+.sgd-cases-intro {
+  font-size: 17px;
+  line-height: 1.55;
+  color: #5B6676;
+  margin: 0;
+  max-width: 48ch;
+}
+.sgd-cases-controls {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.sgd-cases-all {
+  display: inline-block;
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0E1A2B;
+  text-decoration: underline;
+  text-decoration-color: #D9DCD3;
+  text-underline-offset: 5px;
+  transition: text-decoration-color 0.2s ease;
+}
+.sgd-cases-all:hover {
+  text-decoration-color: #0E1A2B;
+}
+.sgd-cases-arrows {
+  display: flex;
+  gap: 8px;
+}
+.sgd-cases-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1.5px solid #0E1A2B;
+  background: transparent;
+  color: #0E1A2B;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+.sgd-cases-arrow:hover:not(:disabled) {
+  background-color: #0E1A2B;
+  color: #FFFFFF;
+}
+.sgd-cases-arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.sgd-cases-arrow svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+.sgd-cases-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 4px;
+}
+.sgd-cases-track::-webkit-scrollbar {
+  display: none;
+}
+.sgd-case {
+  flex: 0 0 calc((100% - 72px) / 4);
+  scroll-snap-align: start;
+  min-width: 0;
+}
+.sgd-case-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+.sgd-case-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #F5F6F1;
+  margin-bottom: 16px;
+}
+.sgd-case-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.sgd-case-label {
+  display: block;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #5B6676;
+  margin-bottom: 6px;
+}
+.sgd-case-title {
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: #0E1A2B;
+  margin: 0;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.2s ease;
+}
+.sgd-case-link:hover .sgd-case-title {
+  text-decoration-color: #0E1A2B;
+}
+.sgd-cases a:focus-visible,
+.sgd-cases button:focus-visible,
+.sgd-cases-track:focus-visible {
+  outline: 2px solid #0E1A2B;
+  outline-offset: 4px;
+}
+
+/* Tablet landscape and small laptops: 3 cards */
+@container (max-width: 1024px) {
+  .sgd-case {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
+/* Tablet portrait: 2 cards */
+@container (max-width: 768px) {
+  .sgd-case {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+/* Phones: 1 card with the next one peeking in */
+@container (max-width: 600px) {
+  .sgd-cases {
+    padding: 64px 20px;
+  }
+  .sgd-cases-head {
+    margin-bottom: 28px;
+  }
+  .sgd-cases-track {
+    gap: 16px;
+  }
+  .sgd-case {
+    flex-basis: 82%;
+  }
+  .sgd-case-title {
+    font-size: 17px;
+  }
+}
+/* Touch screens swipe, so hide the arrows there */
+@media (pointer: coarse) {
+  .sgd-cases-arrows {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sgd-cases-track { scroll-behavior: auto; }
+  .sgd-cases a,
+  .sgd-cases button,
+  .sgd-case-title { transition: none; }
+}
+</style>
+<section class="sgd-cases" id="sgd-cases" aria-labelledby="sgd-cases-title">
+  <div class="sgd-cases-inner">
+    <div class="sgd-cases-head">
+      <div>
+        <h2 class="sgd-cases-title" id="sgd-cases-title">Case studies</h2>
+        <p class="sgd-cases-intro">Real campaigns and results from our clients.</p>
+      </div>
+      <div class="sgd-cases-controls">
+        <a class="sgd-cases-all" href="https://socialgeeks.com.au/portfolio-case-studies/">All case studies</a>
+        <div class="sgd-cases-arrows">
+          <button type="button" class="sgd-cases-arrow" data-dir="-1" aria-label="Previous case studies" aria-controls="sgd-cases-track">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button type="button" class="sgd-cases-arrow" data-dir="1" aria-label="Next case studies" aria-controls="sgd-cases-track">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <ul class="sgd-cases-track" id="sgd-cases-track" tabindex="0" aria-label="Case studies, scroll sideways for more">
+      <li class="sgd-case">
+        <a class="sgd-case-link" href="https://socialgeeks.com.au/portfolio-case-studies/">
+          <div class="sgd-case-image"><img src="https://storage.googleapis.com/funnel-ai-production/cloned/XtJD6bF0jgc1rw9H7cmk/dZuRuSfDnQyT33Yqj6CF/img_11" alt="" loading="lazy" width="600" height="600"></div>
+          <span class="sgd-case-label">Website</span>
+          <h3 class="sgd-case-title">Coastal Seal &amp; Grout: a local website for a Sunshine Coast tradie</h3>
+        </a>
+      </li>
+      <li class="sgd-case">
+        <a class="sgd-case-link" href="https://socialgeeks.com.au/portfolio-case-studies/">
+          <div class="sgd-case-image"><img src="https://storage.googleapis.com/funnel-ai-production/cloned/XtJD6bF0jgc1rw9H7cmk/dZuRuSfDnQyT33Yqj6CF/img_12" alt="" loading="lazy" width="600" height="600"></div>
+          <span class="sgd-case-label">Meta Ads</span>
+          <h3 class="sgd-case-title">429% ROAS from a purchase-focused campaign for a handmade jewellery business</h3>
+        </a>
+      </li>
+      <li class="sgd-case">
+        <a class="sgd-case-link" href="https://socialgeeks.com.au/portfolio-case-studies/">
+          <div class="sgd-case-image"><img src="https://storage.googleapis.com/funnel-ai-production/cloned/XtJD6bF0jgc1rw9H7cmk/dZuRuSfDnQyT33Yqj6CF/img_13" alt="" loading="lazy" width="600" height="600"></div>
+          <span class="sgd-case-label">Meta and Google Ads</span>
+          <h3 class="sgd-case-title">$6.6M in sales and $200K in extra commissions for a real estate client</h3>
+        </a>
+      </li>
+      <li class="sgd-case">
+        <a class="sgd-case-link" href="https://socialgeeks.com.au/portfolio-case-studies/">
+          <div class="sgd-case-image"><img src="https://storage.googleapis.com/funnel-ai-production/cloned/XtJD6bF0jgc1rw9H7cmk/dZuRuSfDnQyT33Yqj6CF/img_14" alt="" loading="lazy" width="600" height="600"></div>
+          <span class="sgd-case-label">Video</span>
+          <h3 class="sgd-case-title">Drone and gimbal video for an arborist</h3>
+        </a>
+      </li>
+      <li class="sgd-case">
+        <a class="sgd-case-link" href="https://socialgeeks.com.au/portfolio-case-studies/">
+          <div class="sgd-case-image"><img src="https://storage.googleapis.com/funnel-ai-production/cloned/XtJD6bF0jgc1rw9H7cmk/dZuRuSfDnQyT33Yqj6CF/img_15" alt="" loading="lazy" width="600" height="600"></div>
+          <span class="sgd-case-label">[SERVICE]</span>
+          <h3 class="sgd-case-title">[CASE STUDY TITLE]</h3>
+        </a>
+      </li>
+      <li class="sgd-case">
+        <a class="sgd-case-link" href="https://socialgeeks.com.au/portfolio-case-studies/">
+          <div class="sgd-case-image"><img src="https://storage.googleapis.com/funnel-ai-production/cloned/XtJD6bF0jgc1rw9H7cmk/dZuRuSfDnQyT33Yqj6CF/img_16" alt="" loading="lazy" width="600" height="600"></div>
+          <span class="sgd-case-label">[SERVICE]</span>
+          <h3 class="sgd-case-title">[CASE STUDY TITLE]</h3>
+        </a>
+      </li>
+      <li class="sgd-case">
+        <a class="sgd-case-link" href="https://socialgeeks.com.au/portfolio-case-studies/">
+          <div class="sgd-case-image"><img src="https://storage.googleapis.com/funnel-ai-production/cloned/XtJD6bF0jgc1rw9H7cmk/dZuRuSfDnQyT33Yqj6CF/img_17" alt="" loading="lazy" width="600" height="600"></div>
+          <span class="sgd-case-label">[SERVICE]</span>
+          <h3 class="sgd-case-title">[CASE STUDY TITLE]</h3>
+        </a>
+      </li>
+      <li class="sgd-case">
+        <a class="sgd-case-link" href="https://socialgeeks.com.au/portfolio-case-studies/">
+          <div class="sgd-case-image"><img src="https://storage.googleapis.com/funnel-ai-production/cloned/XtJD6bF0jgc1rw9H7cmk/dZuRuSfDnQyT33Yqj6CF/img_18" alt="" loading="lazy" width="600" height="600"></div>
+          <span class="sgd-case-label">Google Ads</span>
+          <h3 class="sgd-case-title">Nature’s Help: Google Performance Max campaign</h3>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<script>
+(function () {
+  var section = document.getElementById('sgd-cases');
+  if (!section) return;
+  var track = section.querySelector('.sgd-cases-track');
+  var buttons = section.querySelectorAll('.sgd-cases-arrow');
+  if (!track || !buttons.length) return;
+
+  function step() {
+    var card = track.querySelector('.sgd-case');
+    var gap = parseFloat(getComputedStyle(track).columnGap) || 24;
+    return card ? card.getBoundingClientRect().width + gap : 300;
+  }
+  function update() {
+    var max = track.scrollWidth - track.clientWidth - 2;
+    buttons[0].disabled = track.scrollLeft <= 2;
+    buttons[1].disabled = track.scrollLeft >= max;
+  }
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      track.scrollBy({ left: step() * Number(btn.getAttribute('data-dir')), behavior: 'smooth' });
+    });
+  });
+  track.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();
+</script>
+</div>

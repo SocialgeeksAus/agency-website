@@ -1,0 +1,121 @@
+<div class="sgd-cq">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+.sgd-cq { container-type: inline-size; width: 100%; max-width: 100%; }
+.clone-top-bar {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #0E1A2B;
+  color: #FFFFFF;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(217, 220, 211, 0.15);
+}
+.clone-top-bar .clone-top-bar-container {
+  width: 100%;
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.clone-top-bar .clone-top-bar-message {
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+.clone-top-bar .clone-top-bar-socials {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.clone-top-bar .clone-top-bar-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #C9CED6;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: color 0.2s ease;
+}
+.clone-top-bar .clone-top-bar-social-link:hover {
+  color: #FFFFFF;
+}
+.clone-top-bar .clone-top-bar-social-link:focus-visible {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 3px;
+}
+.clone-top-bar .clone-top-bar-social-icon {
+  width: 14px;
+  height: 14px;
+  display: block;
+  fill: currentColor;
+}
+@container (max-width: 768px) {
+  .clone-top-bar .clone-top-bar-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+  }
+  .clone-top-bar .clone-top-bar-message {
+    font-size: 12px;
+  }
+  .clone-top-bar .clone-top-bar-socials {
+    gap: 4px;
+  }
+  .clone-top-bar .clone-top-bar-social-link {
+    width: 40px;
+    height: 40px;
+  }
+}
+@container (max-width: 600px) {
+  .clone-top-bar .clone-top-bar-container {
+    padding: 0 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .clone-top-bar .clone-top-bar-social-link { transition: none; }
+}
+/* Any touch screen (phones and tablets, including iPads in landscape) */
+@media (pointer: coarse) {
+  .clone-top-bar .clone-top-bar-socials { gap: 4px; }
+  .clone-top-bar .clone-top-bar-social-link { width: 40px; height: 40px; }
+}
+</style>
+<div class="clone-top-bar">
+  <div class="clone-top-bar-container">
+    <p class="clone-top-bar-message">No lock-in contracts. Your ad accounts stay in your name.</p>
+    <ul class="clone-top-bar-socials">
+      <li>
+        <a href="https://www.facebook.com/socialgeeksdigital" class="clone-top-bar-social-link" aria-label="Social Geeks Digital on Facebook" target="_blank" rel="noopener noreferrer">
+          <svg class="clone-top-bar-social-icon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/socialgeeks.io" class="clone-top-bar-social-link" aria-label="Social Geeks Digital on Instagram" target="_blank" rel="noopener noreferrer">
+          <svg class="clone-top-bar-social-icon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/social-geeks-digital" class="clone-top-bar-social-link" aria-label="Social Geeks Digital on LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg class="clone-top-bar-social-icon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@socialgeeksdigital" class="clone-top-bar-social-link" aria-label="Social Geeks Digital on YouTube" target="_blank" rel="noopener noreferrer">
+          <svg class="clone-top-bar-social-icon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>

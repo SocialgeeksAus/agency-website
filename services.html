@@ -1,0 +1,266 @@
+<div class="sgd-cq">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;600&display=swap');
+.sgd-cq { container-type: inline-size; width: 100%; max-width: 100%; }
+
+.sgd-services {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  background-color: #F5F6F1;
+  color: #0E1A2B;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 104px 24px;
+}
+.sgd-services *,
+.sgd-services *::before,
+.sgd-services *::after {
+  box-sizing: border-box;
+}
+.sgd-services-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.sgd-services-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 64px;
+  align-items: end;
+  margin-bottom: 64px;
+}
+.sgd-services-title {
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: clamp(34px, 4.2cqi, 44px);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: #0E1A2B;
+  margin: 0;
+}
+.sgd-services-intro {
+  font-size: 17px;
+  line-height: 1.55;
+  color: #5B6676;
+  margin: 0;
+  max-width: 48ch;
+}
+.sgd-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sgd-service {
+  border-top: 1px solid #D9DCD3;
+  padding: 28px 0 44px;
+}
+.sgd-service-icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin-bottom: 20px;
+  color: #0E1A2B;
+}
+.sgd-service-title {
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #0E1A2B;
+  margin: 0 0 10px;
+}
+.sgd-service-title a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #D9DCD3;
+  text-underline-offset: 5px;
+  transition: text-decoration-color 0.2s ease;
+}
+.sgd-service-title a:hover {
+  text-decoration-color: #0E1A2B;
+}
+.sgd-service-text {
+  font-size: 16px;
+  line-height: 1.55;
+  color: #5B6676;
+  margin: 0;
+  max-width: 38ch;
+}
+.sgd-services-foot {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 28px;
+}
+.sgd-services-btn {
+  display: inline-block;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #D42A22;
+  padding: 15px 34px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.sgd-services-btn:hover {
+  background-color: #B8231C;
+}
+.sgd-services-note {
+  font-size: 15px;
+  color: #5B6676;
+  margin: 0;
+}
+.sgd-services a:focus-visible {
+  outline: 2px solid #0E1A2B;
+  outline-offset: 4px;
+}
+@container (max-width: 900px) {
+  .sgd-services-head {
+    grid-template-columns: 1fr;
+    margin-bottom: 48px;
+  }
+  .sgd-services-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 32px;
+  }
+}
+@container (max-width: 600px) {
+  .sgd-services {
+    padding: 64px 20px;
+  }
+  .sgd-services-head {
+    gap: 14px;
+    margin-bottom: 36px;
+  }
+  .sgd-services-title {
+    font-size: 34px;
+  }
+  .sgd-services-intro {
+    font-size: 16px;
+  }
+  .sgd-services-grid {
+    grid-template-columns: 1fr;
+  }
+  .sgd-service {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    column-gap: 16px;
+    align-items: start;
+    padding: 22px 0 24px;
+  }
+  .sgd-service-icon {
+    grid-row: 1 / span 2;
+    width: 28px;
+    height: 28px;
+    margin: 2px 0 0;
+  }
+  .sgd-service-title {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  .sgd-service-text {
+    font-size: 15px;
+    max-width: none;
+  }
+  .sgd-services-foot {
+    margin-top: 16px;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    gap: 12px;
+  }
+  .sgd-services-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sgd-services a { transition: none; }
+}
+</style>
+<section class="sgd-services" id="services" aria-labelledby="sgd-services-title">
+  <div class="sgd-services-inner">
+    <div class="sgd-services-head">
+      <h2 class="sgd-services-title" id="sgd-services-title">What we do</h2>
+      <p class="sgd-services-intro">Pick the services you need. Every one runs on the same rules: no lock-in contracts, plain reporting, and accounts that stay in your name.</p>
+    </div>
+
+    <ul class="sgd-services-grid">
+      <li class="sgd-service">
+        <svg class="sgd-service-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="9" y="3" width="14" height="26" rx="3"/>
+          <path d="M14 25h4"/>
+          <path d="M13 11l3 3 5-5"/>
+        </svg>
+        <h3 class="sgd-service-title"><a href="https://socialgeeks.com.au/meta-ads">Meta Ads</a></h3>
+        <p class="sgd-service-text">Facebook and Instagram campaigns we test, tweak and optimise. Your ad account and pixel stay in your name.</p>
+      </li>
+
+      <li class="sgd-service">
+        <svg class="sgd-service-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="14" cy="14" r="9"/>
+          <path d="M21 21l7 7"/>
+        </svg>
+        <h3 class="sgd-service-title"><a href="https://socialgeeks.com.au/google-ads">Google Ads</a></h3>
+        <p class="sgd-service-text">Get in front of people already searching for what you sell, across Search, Shopping, Display and YouTube.</p>
+      </li>
+
+      <li class="sgd-service">
+        <svg class="sgd-service-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="5" width="7" height="22" rx="1.5"/>
+          <rect x="12.5" y="5" width="7" height="15" rx="1.5"/>
+          <rect x="22" y="5" width="7" height="9" rx="1.5"/>
+        </svg>
+        <h3 class="sgd-service-title">HighLevel CRM</h3>
+        <p class="sgd-service-text">Pipelines, follow-ups and lead management set up properly, so enquiries don't fall through the cracks.</p>
+      </li>
+
+      <li class="sgd-service">
+        <svg class="sgd-service-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 26h24"/>
+          <path d="M8 26V16"/>
+          <path d="M14 26V10"/>
+          <path d="M20 26V13"/>
+          <path d="M26 26V5"/>
+        </svg>
+        <h3 class="sgd-service-title">AI visibility and SEO</h3>
+        <p class="sgd-service-text">Help the right people find you in Google results and in AI answers from tools like ChatGPT and Gemini.</p>
+      </li>
+
+      <li class="sgd-service">
+        <svg class="sgd-service-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="11" y="3" width="10" height="16" rx="5"/>
+          <path d="M6 15a10 10 0 0 0 20 0"/>
+          <path d="M16 25v4"/>
+          <path d="M11 29h10"/>
+        </svg>
+        <h3 class="sgd-service-title">Video and podcasting</h3>
+        <p class="sgd-service-text">Video podcasts planned, recorded and managed, with the footage cut into content for your ads.</p>
+      </li>
+
+      <li class="sgd-service">
+        <svg class="sgd-service-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 26l7-9 5 5 6-10 8 8"/>
+          <path d="M3 29h26"/>
+        </svg>
+        <h3 class="sgd-service-title">Marketing strategy</h3>
+        <p class="sgd-service-text">Test, tweak, optimise. A plan built around what each customer costs you and what they're worth.</p>
+      </li>
+    </ul>
+
+    <div class="sgd-services-foot">
+      <a href="https://links.socialgeeks.com.au/widget/bookings/sg-free-consult" target="_blank" rel="noopener" class="sgd-services-btn">Book a free 30-minute call</a>
+      <p class="sgd-services-note">Talk to Kyle about what you actually need.</p>
+    </div>
+  </div>
+</section>
+</div>

@@ -1,0 +1,149 @@
+<div class="sgd-cq">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;600&display=swap');
+.sgd-cq { container-type: inline-size; width: 100%; max-width: 100%; }
+
+.sgd-reviews {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #0E1A2B;
+  color: #FFFFFF;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 104px 24px;
+}
+.sgd-reviews *,
+.sgd-reviews *::before,
+.sgd-reviews *::after {
+  box-sizing: border-box;
+}
+.sgd-reviews-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.sgd-reviews-title {
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: clamp(34px, 4.2cqi, 44px);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: #FFFFFF;
+  margin: 0 0 56px;
+}
+.sgd-review {
+  margin: 0;
+}
+.sgd-review blockquote {
+  margin: 0;
+}
+.sgd-review-feature {
+  max-width: 900px;
+  margin-bottom: 72px;
+}
+.sgd-review-feature .sgd-review-quote {
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: clamp(24px, 3cqi, 34px);
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  margin: 0 0 24px;
+}
+.sgd-reviews-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 56px;
+}
+.sgd-reviews-grid > li {
+  border-top: 1px solid rgba(217, 220, 211, 0.22);
+  padding: 28px 0 48px;
+}
+.sgd-reviews-grid .sgd-review-quote {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  margin: 0 0 18px;
+  max-width: 54ch;
+}
+.sgd-review-author {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0;
+}
+.sgd-review-business {
+  font-weight: 400;
+  color: #C9CED6;
+}
+@container (max-width: 900px) {
+  .sgd-reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@container (max-width: 600px) {
+  .sgd-reviews {
+    padding: 72px 20px;
+  }
+  .sgd-reviews-title {
+    margin-bottom: 40px;
+  }
+  .sgd-review-feature {
+    margin-bottom: 48px;
+  }
+  .sgd-review-business {
+    display: block;
+    margin-top: 4px;
+  }
+}
+</style>
+<section class="sgd-reviews" aria-labelledby="sgd-reviews-title">
+  <div class="sgd-reviews-inner">
+    <h2 class="sgd-reviews-title" id="sgd-reviews-title">What clients say</h2>
+
+    <figure class="sgd-review sgd-review-feature">
+      <blockquote>
+        <p class="sgd-review-quote">“My event wasn’t selling as many tickets as I expected, so I engaged Kyle to help me create a simple Facebook ad. One week before the event date, it has SOLD OUT! Couldn’t have done it without him.”</p>
+      </blockquote>
+      <figcaption class="sgd-review-author">Tara Caraman <span class="sgd-review-business">Sunshine Coast workshop host</span></figcaption>
+    </figure>
+
+    <ul class="sgd-reviews-grid">
+      <li>
+        <figure class="sgd-review">
+          <blockquote>
+            <p class="sgd-review-quote">“Being a sole trader, I wear a lot of hats, and having someone like Kyle looking after the website side of things has been a massive weight off my shoulders. Nothing is ever too much trouble, no matter how big or small the request.”</p>
+          </blockquote>
+          <figcaption class="sgd-review-author">Nigel <span class="sgd-review-business">Coastal Seal &amp; Grout</span></figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="sgd-review">
+          <blockquote>
+            <p class="sgd-review-quote">“They helped fix a number of issues with my Google Business Profile that no one else was able to resolve. I very much appreciate their assistance.”</p>
+          </blockquote>
+          <figcaption class="sgd-review-author">Sean Ritter</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="sgd-review">
+          <blockquote>
+            <p class="sgd-review-quote">“I just started working with Kyle for the past two weeks. Man, he is super fast and knowledgeable. Very polite to work with. The information he has given already is priceless.”</p>
+          </blockquote>
+          <figcaption class="sgd-review-author">Johnny Allssop</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="sgd-review">
+          <blockquote>
+            <p class="sgd-review-quote">“I LOVE my new business website. Kyle was very friendly and easy to talk with and nothing was too much trouble at all. Highly recommended.”</p>
+          </blockquote>
+          <figcaption class="sgd-review-author">Jodi</figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+</section>
+</div>

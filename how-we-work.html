@@ -1,0 +1,114 @@
+<div class="sgd-cq">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400&display=swap');
+.sgd-cq { container-type: inline-size; width: 100%; max-width: 100%; }
+
+.sgd-how {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #0E1A2B;
+  color: #FFFFFF;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 104px 24px;
+}
+.sgd-how *,
+.sgd-how *::before,
+.sgd-how *::after {
+  box-sizing: border-box;
+}
+.sgd-how-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.sgd-how-title {
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: clamp(34px, 4.2cqi, 44px);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: #FFFFFF;
+  margin: 0 0 16px;
+}
+.sgd-how-intro {
+  font-size: 17px;
+  line-height: 1.55;
+  color: #C9CED6;
+  margin: 0 0 64px;
+  max-width: 52ch;
+}
+.sgd-how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sgd-how-item {
+  border-top: 1px solid rgba(217, 220, 211, 0.22);
+  padding-top: 28px;
+}
+.sgd-how-item-title {
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  margin: 0 0 12px;
+}
+.sgd-how-item-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #C9CED6;
+  margin: 0 0 16px;
+  max-width: 38ch;
+}
+.sgd-how-item-fact {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #FFFFFF;
+  margin: 0;
+}
+@container (max-width: 900px) {
+  .sgd-how-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .sgd-how-intro {
+    margin-bottom: 48px;
+  }
+}
+@container (max-width: 600px) {
+  .sgd-how {
+    padding: 72px 20px;
+  }
+}
+</style>
+<section class="sgd-how" aria-labelledby="sgd-how-title">
+  <div class="sgd-how-inner">
+    <h2 class="sgd-how-title" id="sgd-how-title">How we work</h2>
+    <p class="sgd-how-intro">Three rules we don't bend, whichever services you choose.</p>
+
+    <ul class="sgd-how-grid">
+      <li class="sgd-how-item">
+        <h3 class="sgd-how-item-title">No lock-in contracts</h3>
+        <p class="sgd-how-item-text">Stay because it's working, not because you're stuck. Your ad accounts and creative stay in your name, so leaving is simple.</p>
+        <p class="sgd-how-item-fact">[NOTICE PERIOD] notice</p>
+      </li>
+
+      <li class="sgd-how-item">
+        <h3 class="sgd-how-item-title">You talk to the person doing the work</h3>
+        <p class="sgd-how-item-text">No junior account managers or sales middlemen. Questions go straight to the specialist running your campaigns.</p>
+      </li>
+
+      <li class="sgd-how-item">
+        <h3 class="sgd-how-item-title">Prices on the page</h3>
+        <p class="sgd-how-item-text">We run lean and online, which keeps overheads low. You see what you pay and where your ad spend goes.</p>
+        <p class="sgd-how-item-fact">From [STARTING PRICE]</p>
+      </li>
+    </ul>
+  </div>
+</section>
+</div>
